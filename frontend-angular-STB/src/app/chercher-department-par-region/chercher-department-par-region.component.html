@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="header">
+        <button class="image-button" (click)="onImageButtonClick()">
+            <img src="../../assets/stbbank.jpeg" alt="stb bank">
+          </button>
+        
+    </div>
+    <div class="main-content">
+        <form (ngSubmit)="onSubmit()">
+            <input type="text" id="region" name="region" placeholder="region" [(ngModel)]="formData.region">
+            <br>
+            <br>
+            <br>
+
+            <br>
+            
+            <button type="submit" >rechercher department</button>
+        </form>
+    </div>
+</div>

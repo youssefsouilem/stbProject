@@ -1,0 +1,71 @@
+/* Container for the entire form */
+.container {
+    text-align: center;
+    background: linear-gradient(to bottom, #82caff, #3940ff);
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Header styles */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding:24px;
+    background-color: #5864fc; /* Bank's primary color */
+    color: white;
+    font-size: 30px;
+    height: 50px;
+  }
+  
+  /* Main content area */
+  .main-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  /* Input styles */
+  form input {
+    width: calc(100% - 40px);
+    max-width: 400px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    font-size: 16px;
+  }
+  
+  /* Button styles */
+  form button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  form button:hover {
+    background-color: #333;
+  }
+  
+  /* Image button styles */
+  .image-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+  
+  .button-image {
+    width: 100px; /* Ajustez la taille selon vos besoins */
+    height: auto;
+  }

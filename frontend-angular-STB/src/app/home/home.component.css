@@ -1,0 +1,66 @@
+/* Container for the whole page */
+.container {
+    text-align: center;
+    background: linear-gradient(to bottom, #82caff, #3940ff);
+    padding: 0 px;
+    margin: 0px
+  }
+  
+  /* Header styles */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding:24px;
+    background-color: #5864fc; /* Bank's primary color */
+    color: white;
+    font-size: 30px;
+    height: 50px;
+  }
+  
+  /* Styling for the main content area */
+  .main-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: calc(100vh - 60px); /* Full viewport height minus header */
+  }
+  
+  /* Individual search option styling */
+  .search-option {
+    text-align: center;
+  }
+  
+  /* Images */
+  .search-option img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  /*linear-gradient(to buttom, #00aaff, #ff99cc);*/
+  /* Buttons */
+  .search-option button {
+    background-color: #00aaff; /* Button color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .search-option button:hover {
+    background-color: #0077cc; /* Darker shade on hover */
+  }
+  .image-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+  
+  .button-image {
+    width: 100px; /* Ajustez la taille selon vos besoins */
+    height: auto;
+  }
