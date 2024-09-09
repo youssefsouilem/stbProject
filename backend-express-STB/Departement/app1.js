@@ -4,7 +4,7 @@ const dotenv = require('dotenv');
 const cors = require("cors");
 dotenv.config();
 
-const AgentRouter = require("./routes/Departement");
+const DepartmentRouter = require("./routes/Departement");
 
 const PORT = process.env.PORT || 3000;
 const app = express();
@@ -16,7 +16,8 @@ app.use(
   })
 );
 mongoose.connect("mongodb://localhost:27017/Departement");
-app.use("/agent", AgentRouter);
+app.use("api/department/region", DepartmentRouter);
+app.use("api/department/adresse", DepartmentRouter);
 
 app.get("/hello", (req, res) => {
   res.send("Hello");

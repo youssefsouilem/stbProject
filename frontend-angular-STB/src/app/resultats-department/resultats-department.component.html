@@ -1,1 +1,52 @@
-<p>resultats-department works!</p>
+<div class="container">
+    <div class="header">
+      <button class="image-button" (click)="onImageButtonClick()">
+        <img src="../../assets/stbbank.jpeg" alt="stb bank">
+    </button>
+    
+    </div>
+    <div class="main-content">
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Num</th>
+                        <th>matricule</th>
+                        <th>Nom_departement</th>
+                        <th>Email</th>
+                        <th>num_tel</th>
+                        <th>Ville</th>
+                        <th>Gouvernement</th>
+                        <th>Region</th>
+                        <th>Responsable</th>
+                        <th>liste d'agents</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let row of rows; let i = index">
+                        <td>{{ i + 1 }}</td>
+                        <td>{{ row.matricule }}</td>
+                        <td>{{ row.Nom_departement }}</td>
+                        <td>{{row.Email}}</td>
+                        <td>{{ row.num_tel }}</td>
+                        <td>{{ row.Ville }}</td>
+                        <td>{{ row.Gouvernement }}</td>
+                        <td>{{ row.Region }}</td>
+                        <td>{{ row.Responsable }}</td>
+                        <td>
+                            <ul>
+                                <li *ngFor="let agent of row.listeAgents">
+                                  {{ agent.nom }} {{ agent.prenom }}
+                                </li>
+                              </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+  </div>
+ <!-- /*ngFor="let agent of row.liste_d_agents">{{ agent }}*/-->
+
+
+ <!-- ahamm 7keya kifeh trznsformi els besoins/requetes en code -->

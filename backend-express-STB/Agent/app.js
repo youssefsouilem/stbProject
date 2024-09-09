@@ -1,3 +1,4 @@
+
 const express = require("express");
 const axios = require('axios');
 const mongoose = require("mongoose");
@@ -5,7 +6,7 @@ const dotenv = require('dotenv');
 const cors = require("cors");
 dotenv.config();
 
-const AgentRouter = require("./routes/Agent");
+const AgentRouter = require(".//routes/Agent");
 
 const PORT = process.env.PORT || 3000;
 const app = express();
@@ -17,7 +18,7 @@ app.use(
   })
 );
 mongoose.connect("mongodb://localhost:27017/Agent");
-app.use("/agent", AgentRouter);
+app.use("/api/agent", AgentRouter);
 
 app.get("/hello", (req, res) => {
   res.send("Hello");

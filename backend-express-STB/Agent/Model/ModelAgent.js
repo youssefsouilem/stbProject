@@ -1,18 +1,16 @@
-const mongoose = require("mongoose")
-const Schema = mongoose.Schema
-const userSchema = new Schema({
-    nom : String ,
-    prenom : String ,
-    num_tel : Number,
-    agence : String , 
-    siege : String,
-    adresse : String,
-    poste :String,
-     matricule: {
-        type: String,
-        unique: true,  
-        required: true 
-    }
+const mongoose = require('mongoose');
+
+const agentSchema = new mongoose.Schema({
+  nom: { type: String, required: true },
+  prenom: { type: String, required: true },
+  num_tel: { type: Number, required: true },
+  agence: { type: String, required: true },
+  email: { type: String},
+  adresse: { type: String, required: true },
+  poste: { type: String, required: true },
+  matricule: { type: Number, required: true,unique: true },
+  dept_matricule:{type:Number, required:true}
 });
-const Agent = mongoose.model("Agent",userSchema);
-module.exports = Agent;
+
+const AgentModel = mongoose.model('Agent', agentSchema);
+module.exports = AgentModel;

@@ -1,43 +1,58 @@
 {
-  "hash": "25b57b9c",
-  "configHash": "f4be3e94",
+  "hash": "18a9fd30",
+  "configHash": "1eb8bc48",
   "lockfileHash": "2e73ab19",
-  "browserHash": "e07cea8f",
+  "browserHash": "7853d2f6",
   "optimized": {
+    "@angular/common/http": {
+      "src": "../../../../../node_modules/@angular/common/fesm2022/http.mjs",
+      "file": "@angular_common_http.js",
+      "fileHash": "e001fb9b",
+      "needsInterop": false
+    },
     "@angular/core": {
       "src": "../../../../../node_modules/@angular/core/fesm2022/core.mjs",
       "file": "@angular_core.js",
-      "fileHash": "43db825e",
+      "fileHash": "e6aa01a6",
       "needsInterop": false
     },
     "@angular/forms": {
       "src": "../../../../../node_modules/@angular/forms/fesm2022/forms.mjs",
       "file": "@angular_forms.js",
-      "fileHash": "ce254279",
+      "fileHash": "74808dab",
       "needsInterop": false
     },
     "@angular/platform-browser": {
       "src": "../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
       "file": "@angular_platform-browser.js",
-      "fileHash": "4f2cf5d3",
+      "fileHash": "640c21d8",
       "needsInterop": false
     },
     "@angular/router": {
       "src": "../../../../../node_modules/@angular/router/fesm2022/router.mjs",
       "file": "@angular_router.js",
-      "fileHash": "a569bc22",
+      "fileHash": "9dabd319",
+      "needsInterop": false
+    },
+    "@angular/common": {
+      "src": "../../../../../node_modules/@angular/common/fesm2022/common.mjs",
+      "file": "@angular_common.js",
+      "fileHash": "314d3ca4",
       "needsInterop": false
     }
   },
   "chunks": {
-    "chunk-KZJJBW77": {
-      "file": "chunk-KZJJBW77.js"
+    "chunk-WAIUNEHX": {
+      "file": "chunk-WAIUNEHX.js"
     },
-    "chunk-QHYRABPK": {
-      "file": "chunk-QHYRABPK.js"
+    "chunk-NHW3SB7O": {
+      "file": "chunk-NHW3SB7O.js"
     },
-    "chunk-HVFU3AXE": {
-      "file": "chunk-HVFU3AXE.js"
+    "chunk-HL4FNDSX": {
+      "file": "chunk-HL4FNDSX.js"
+    },
+    "chunk-LG6JSORR": {
+      "file": "chunk-LG6JSORR.js"
     }
   }
 }

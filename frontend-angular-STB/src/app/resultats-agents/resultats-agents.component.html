@@ -1,1 +1,40 @@
-<p>resultats-agents works!</p>
+<div class="container">
+    <div class="header">
+      <button class="image-button" (click)="onImageButtonClick()">
+        <img src="../../assets/stbbank.jpeg" alt="stb bank">
+    </button>
+    
+    </div>
+    <div class="main-content">
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Num</th>
+                        <th>maricule</th>
+                        <th>Nom</th>
+                        <th>prenom</th>
+                        <th>poste</th>
+                        <th>Tel</th>
+                        <th>email</th>
+                        <th>poste</th>
+                        <th>adresse</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let row of rows; let i = index">
+                        <td>{{ i + 1 }}</td>
+                        <td>{{ row.matricule }}</td>
+                        <td>{{ row.nom }}</td>
+                        <td>{{ row.prenom }}</td>
+                        <td>{{ row.poste }}</td>
+                        <td>{{ row.num_tel }}</td>
+                        <td>{{ row.email }}</td>
+                        <td>{{ row.poste }}</td>
+                        <td>{{ row.adresse }}</td>
+                </tbody>
+            </table>
+        </div>
+    </div>
+  </div>
+  
